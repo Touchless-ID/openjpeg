@@ -304,8 +304,8 @@ endif()
 
 #-----------------------------------------------------------------------------
 # Build Testing
-option(BUILD_TESTING "Build the tests." OFF)
-if(BUILD_TESTING)
+option(JP_BUILD_TESTING "Build the tests." OFF)
+if(JP_BUILD_TESTING)
   if(BUILD_CODEC)
     enable_testing()
     include(CTest)

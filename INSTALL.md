@@ -39,7 +39,7 @@ Main available cmake flags:
   * [OBSOLETE] To build the JPIP server (need fcgi) library and executables: '-DBUILD\_JPIP\_SERVER:bool=on' (default: 'OFF')
   * To enable testing (and automatic result upload to http://my.cdash.org/index.php?project=OPENJPEG):
 ```
-cmake . -DBUILD_TESTING:BOOL=ON -DOPJ_DATA_ROOT:PATH='path/to/the/data/directory' -DBUILDNAME:STRING='name_of_the_build'
+cmake . -DJP_BUILD_TESTING:BOOL=ON -DOPJ_DATA_ROOT:PATH='path/to/the/data/directory' -DBUILDNAME:STRING='name_of_the_build'
 make
 make Experimental
 ```
